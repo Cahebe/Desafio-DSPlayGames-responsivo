@@ -1,0 +1,23 @@
+:root {
+   --green: #38AF90;
+   --full-white: #fff;
+   --white: #E5E5E5;
+   --darkdark-gray: #383838;
+   --dark-gray: #797979;
+   --light-gray: #F0F0F0;
+   --pink: #DD7E92;
+   
+}
+
+* {
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+}
+
+.header-container {
+    min-width: 320px;
+    min-height: 90px;
+    background-color: var(--green);
+    color: var(--full-white);
+}
