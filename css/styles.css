@@ -9,9 +9,87 @@
    
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: unset;
+}
+
+/*estilização do header*/
+
+.nav-container {
+    background-color: var(--green);
+    height: 90px;
+    width: 100%;
+}
+
+.nav-main {
+    height: 90px;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.nav-main .title{
+font-size: 18px;
+font-weight: 700;
+display: flex;
+margin-left: 25px;
+}
+
+.nav-main a {
+    color: var(--full-white);
+}
+
+.nav-main .menu {
+    display: flex;
+    margin-left: 107px;
+}
+
+.menu-item {
+    list-style-type: none;
+    font-size: 14px;
+}
+
+.menu-item li {
+    margin: 34px 10px;
+}
+
+.nav-main .img {
+    margin: 14px 14px;
+}
+
+/*Estilização new-section*/
+
+/*Media control*/
+
+@media(max-width: 960px) {
+
+.menu-item {
+    display: none;
+}
+
+}
+
+@media(min-width: 768px) {
+
+.nav-main {
+    max-width: 960px;
+}
+.menu-item {
+    display: flex;
+}
+
 }
 
