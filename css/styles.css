@@ -151,16 +151,19 @@ a:hover {
   background-color: var(--light-gray);
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 40px 10px;
 }
 
-.container-games h2 {
+.games {
   color: var(--green);
+  background-color: var(--light-gray);
+  height: 110px;
   font-size: 24px;
   font-weight: 700;
   display: flex;
   justify-content: center;
-  margin-bottom: 28px;
+  align-items: center;
 }
 
 .container-content-games {
@@ -217,50 +220,54 @@ a:hover {
   display: flex;
   flex-direction: column;
   padding: 40px 10px;
+  align-items: center;
 }
 
 .container-subscription h2 {
-    color: var(--dark-gray);
-    font-size: 24px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 16px;
+  color: var(--dark-gray);
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
 }
 
 .container-subs-content {
-    background-color: var(--light-gray);
-    width: 300px;
-    border-radius: 8px;
-    padding: 0px 10px 30px 10px;
-    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
-    margin-bottom: 40px;
+  background-color: var(--light-gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  border-radius: 8px;
+  padding: 0px 10px 30px 10px;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+  margin-bottom: 40px;
 }
 
 .container-input1 {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .container-input1 .input-name {
-    width: 280px;
-    height: 50px;
-    border: 1px solid var(--dark-gray);
-    border-radius: 4px;
-    margin: 50px 0px 20px 0px;
+  width: 280px;
+  height: 50px;
+  border: 1px solid var(--dark-gray);
+  border-radius: 4px;
+  margin: 50px 0px 20px 0px;
 }
 
 .container-input1 .input-email {
-    width: 280px;
-    height: 50px;
-    border: 1px solid var(--dark-gray);
-    border-radius: 4px;
-    margin-bottom: 20px;
+  width: 280px;
+  height: 50px;
+  border: 1px solid var(--dark-gray);
+  border-radius: 4px;
+  margin-bottom: 20px;
 }
 
 .container-plataform {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .container-plataform .label-plataform {
@@ -286,7 +293,7 @@ flex-direction: column;
   flex-direction: column;
 }
 
-.submit .submit1{
+.submit .submit1 {
   background-color: var(--pink);
   font-size: 18px;
   font-weight: bold;
@@ -298,7 +305,7 @@ flex-direction: column;
   margin-bottom: 20px;
 }
 
-.submit .submit2{
+.submit .submit2 {
   background-color: var(--full-white);
   font-size: 18px;
   font-weight: bold;
@@ -309,6 +316,48 @@ flex-direction: column;
   border: var(--pink) 2px solid;
   margin-bottom: 20px;
 }
+
+/*>>>>>>>>Footer<<<<<<<<*/
+.container-footer {
+  background-color: var(--darkdark-gray);
+}
+
+.container-footer2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 302px;
+  background-color: var(--darkdark-gray);
+  color: var(--full-white);
+  justify-content: space-around;
+  font-size: 14px;
+}
+
+.container-footer .container-redes {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.container-redes .rede1 {
+  margin-bottom: 8px;
+}
+
+.container-direitos {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  width: 250px;
+  height: 50px;
+}
+
+.container-privacity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /*>>>>>>>>Media control<<<<<<<<<*/
 
 @media (max-width: 960px) {
@@ -323,5 +372,85 @@ flex-direction: column;
   }
   .menu-item {
     display: flex;
+  }
+
+  .container-news {
+    display: flex;
+    align-items: center;
+  }
+
+  .container-content-news {
+    max-width: 990px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-content-news h3 {
+    font-size: 24px;
+  }
+
+  .container-content-news .summary {
+    font-size: 16px;
+  }
+
+  .container-games {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .container-content-games {
+    margin-right: 30px;
+  }
+
+  .container-subs-content {
+    width: 790px;
+    height: 522px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 70px;
+  }
+
+  .container-subscription h2 {
+    font-size: 36px;
+  }
+
+  .container-subs-content .submit {
+    display: block;
+    margin-left: 15px;
+  }
+
+  .submit .submit1 {
+    margin-right: 40px;
+  }
+
+  .container-input1 .input-name {
+    width: 642px;
+    height: 50px;
+    border: 1px solid var(--dark-gray);
+    border-radius: 4px;
+    margin: 50px 0px 20px 0px;
+  }
+
+  .container-input1 .input-email {
+    width: 642px;
+    height: 50px;
+    border: 1px solid var(--dark-gray);
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+
+  .container-footer2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 190px;
+    font-size: 14px;
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
   }
 }
